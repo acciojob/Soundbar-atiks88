@@ -1,1 +1,24 @@
 /*  your css code here. If applicable */
+html{
+     background-color:#a164df;
+	 display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#buttons{
+	height:100%;
+	width:100%; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+	gap:1rem;
+	margin-top:50%;
+}
+
+.btn{
+	background-color:#663399;
+	border:none;
+	padding:.8rem;
+	border-radius:.25rem;
+	color:white;
+}
