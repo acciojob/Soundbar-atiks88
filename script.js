@@ -1,10 +1,18 @@
-//your JS code here. If required.
-function playsound(soundFile) {
-	var audio = new Audio(soundFile);
-	audio.play();
+var audio;
+
+function playSound(soundFileName) {
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+    audio = new Audio('sounds/' + soundFileName);
+    audio.play();
 }
 
-document.getElementById("btn").addEventListner("click",function(){
-	playsound(sound1.mp3);
-	
-});
+function stopSound() {
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+}
+
